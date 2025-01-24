@@ -1,3 +1,67 @@
+
+/* Estilo básico para las secciones */
+.content {
+    height: 100vh;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2,
+p {
+    margin: 20px;
+}
+
+/* Estilos generales para los efectos */
+.fade-in,
+.slide-in-left,
+.zoom-in,
+.rotate-in {
+    opacity: 0;
+    transition: all 2s ease-in-out;
+    transform: translateY(30px);
+    /* Para la animación fade-in */
+}
+
+/* Clases de animación específicas */
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.zoom-in.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.rotate-in.visible {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+/* Aseguramos que los elementos fuera de pantalla no se vean */
+.fade-in {
+    transform: translateY(30px);
+}
+
+.slide-in-left {
+    transform: translateX(-100%);
+}
+
+.zoom-in {
+    transform: scale(0.8);
+}
+
+.rotate-in {
+    transform: rotate(-180deg);
+}
 /* Estilo básico para las secciones */
 .content {
     height: 100vh;

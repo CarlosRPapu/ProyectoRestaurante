@@ -22,3 +22,28 @@ h1 span {
         transform: translateY(-10px);
     }
 }
+
+.typewriter h1 {
+    color: rgb(233, 217, 217);
+    margin-bottom: 30px;
+    padding: 20px;
+    display: inline-block;
+    animation: wave 2s infinite ease-in-out;
+}
+
+h1 span {
+    display: inline-block;
+    animation: wave 2s infinite ease-in-out;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
