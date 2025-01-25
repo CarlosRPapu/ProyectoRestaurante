@@ -1,0 +1,229 @@
+/* Contenedor del botón */
+.button-container {
+    text-align: center;
+}
+
+
+
+
+/* Estilos base para el botón */
+a.btn {
+    --fuente: 'Roboto', sans-serif;
+    font-family: var(--fuente);
+    color: rgb(238, 229, 229);
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(104, 53, 53), transparent 97%);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Efecto de brillo amarillo en el texto */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff0, 0 0 10px #ff0, 0 0 15px #ff0, 0 0 20px #ff0;
+    }
+
+    100% {
+        text-shadow: 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0, 0 0 50px #ff0;
+    }
+}
+
+.btn:hover {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Degradado en el borde */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #ff0000, #ff7f7f);
+    z-index: -1;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: rgb(238, 229, 229);
+
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+/* Efecto de expansión al hacer hover */
+.btn:hover {
+    transform: scale(1.1);
+    color: rgb(238, 229, 229);
+
+}
+
+
+/* Nuevo borde deslizante en ::after */
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid #e91313;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 4;
+    /* Detrás del ::before */
+    animation: slide-border 2s linear infinite;
+}
+
+/* Keyframes para el borde deslizante */
+@keyframes slide-border {
+    0% {
+        clip-path: inset(0% 100% 0% 0%);
+    }
+
+    25% {
+        clip-path: inset(0% 0% 80% 0%);
+    }
+
+    50% {
+        clip-path: inset(0% 0% 0% 100%);
+    }
+
+    75% {
+        clip-path: inset(80% 0% 0% 0%);
+    }
+
+    100% {
+        clip-path: inset(0% 100% 0% 0%);
+    }
+}
+
+.btn:hover::after {
+    animation-play-state: paused;
+    border: transparent;
+}
+
+/* Contenedor del botón */
+.button-container {
+    text-align: center;
+}
+
+
+
+
+/* Estilos base para el botón */
+a.btn {
+    --fuente: 'Roboto', sans-serif;
+    font-family: var(--fuente);
+    color: rgb(238, 229, 229);
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(104, 53, 53), transparent 97%);
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Efecto de brillo amarillo en el texto */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff0, 0 0 10px #ff0, 0 0 15px #ff0, 0 0 20px #ff0;
+    }
+
+    100% {
+        text-shadow: 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0, 0 0 50px #ff0;
+    }
+}
+
+.btn:hover {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Degradado en el borde */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, #ff0000, #ff7f7f);
+    z-index: -1;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: rgb(238, 229, 229);
+
+}
+
+.btn:hover::before {
+    opacity: 1;
+}
+
+/* Efecto de expansión al hacer hover */
+.btn:hover {
+    transform: scale(1.1);
+    color: rgb(238, 229, 229);
+
+}
+
+
+/* Nuevo borde deslizante en ::after */
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid #e91313;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 4;
+    /* Detrás del ::before */
+    animation: slide-border 2s linear infinite;
+}
+
+/* Keyframes para el borde deslizante */
+@keyframes slide-border {
+    0% {
+        clip-path: inset(0% 100% 0% 0%);
+    }
+
+    25% {
+        clip-path: inset(0% 0% 80% 0%);
+    }
+
+    50% {
+        clip-path: inset(0% 0% 0% 100%);
+    }
+
+    75% {
+        clip-path: inset(80% 0% 0% 0%);
+    }
+
+    100% {
+        clip-path: inset(0% 100% 0% 0%);
+    }
+}
+
+.btn:hover::after {
+    animation-play-state: paused;
+    border: transparent;
+}
