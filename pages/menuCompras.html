@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="../css/menuCompras.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/animation_btn.css">
+
+    <!--<link rel="stylesheet" href="../css/animation.css">-->
+    <link rel="stylesheet" href="../css/iconoCompra.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+
+
+
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/bootstrap.min.css'>
+    <script src='../js/bootstrap.bundle.min.js'></script>
+</head>
+
+<body class="body">
+
+    <!------------------sección de menú ---------------------------->
+
+    <nav class="navbar navbar-dark navbar-expand-lg ">
+        <div class="container-fluid">
+            <img src="/img/logo1.png" class="img-logo" alt="Burgers Carlos">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link house-link " aria-current="page" href="/index.html">
+                            <div class="container_icon">
+                                <i class="bi bi-house"></i>
+                                <i class="bi bi-house-fill"></i>
+                            </div>
+
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link menu-link active" href="./pages/menuCompras.php">
+                            <div class="container_icon">
+                                <i class="bi bi-menu-button-wide"></i>
+                                <i class="bi bi-menu-button-wide-fill"></i>
+                            </div>
+                            Menú
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link info-link" href="/BibTum/pages/book/">
+                            <div class="container_icon">
+                                <i class="bi bi-info-circle"></i>
+                                <i class="bi bi-info-circle-fill"></i>
+                            </div>
+                            Sobre nosotros
+                        </a>
+
+
+                    </li>
+
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link contacto-link" href="#contacto">
+                            <div class="container_icon">
+                                <i class="bi bi-envelope-fill"></i>
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Hamburguesas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Picadas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">chuzos</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane"
+                type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false">Burritos</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+
+            <!------------------sección de comprar  Hamburguesas---------------------------->
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="/img/hamburguesa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hamburguesa de Pollo</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/hamburguesa2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">hamburguesa Clásica</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/hamburguesa3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hamburguesa Doble carne</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+            <!------------------sección de comprar picada---------------------------->
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="/img/picada1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Picada mixta</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/picada2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Picada tres carnes</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/picada3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Picada Marinada</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+
+            <!------------------sección de comprar chuzos---------------------------->
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="/img/chuzo1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">chuzo normal</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/picada4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">chuzo Mixto</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/picada3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Chuzos Doble Carne</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+
+
+            <!------------------sección de comprar Burritos---------------------------->
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="/img/tacos1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Burrito ranchero</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/picada2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Burrito Mixto</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/img/picada4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mega Burrito</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This card has even longer content than the first to show that equal height action.
+                        </p>
+                        <div class="button-container fade-in">
+                            <a href="#" class="btn">Agregar al carrito</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+
+    <!-------sección de pagina de Footer ------>
+
+    <footer class="footer slide-in-left" id="contacto">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h2 class="footer-title">Carlos Burgers</h2>
+                <p class="footer-description">Disfruta de una experiencia gastronómica única.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3 class="footer-title">Contacto</h3>
+                <p class="footer-info">Dirección: Calle Ejemplo, 123</p>
+                <p class="footer-info">Teléfono: (123) 456-7890</p>
+                <p class="footer-info">info@CarlosBurgers.com</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Redes Sociales</h3>
+                <ul class="footer-social">
+                    <li><a href="#" class="social-icon facebook">Facebook</a></li>
+                    <li><a href="#" class="social-icon instagram">Instagram</a></li>
+                    <li><a href="#" class="social-icon twitter">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Restaurante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./js/animationView.js"></script>
+
+
+</body>
+</html>
